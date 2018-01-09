@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Net;
 
-namespace Ticker_Information_Inquiries
+namespace Ticker_Information_INquiry
 {
     class Program
     {
@@ -37,9 +35,8 @@ namespace Ticker_Information_Inquiries
                 else if (line.Contains("market") || line.Contains("MARKET") || line.Contains("Market")) { Console.WriteLine(marketcaps); }
                 else if (line.Contains("price") || line.Contains("Price") || line.Contains("PRICE")) { Console.WriteLine(close_prices); }
                 else if (line.Contains("ceo") || line.Contains("CEO") || line.Contains("Ceo") || line.Contains("Boss")) { Console.WriteLine(ceos); }
-                else { Console.WriteLine("You can only ask about CEO, Market Capitalization, Sector, and Closing Price");}
+                else { Console.WriteLine("You can only ask about CEO, Market Capitalization, Sector, and Closing Price"); }
             }
         }
     }
 }
-
